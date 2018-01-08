@@ -1,6 +1,5 @@
-FROM sdhibit/rpi-raspbian:jessie
-#FROM ubuntu:17.10
-#FROM ubuntu:latest
+FROM resin/rpi-raspbian:jessie
+
 MAINTAINER Martin Page
 
 RUN apt-get update --fix-missing
