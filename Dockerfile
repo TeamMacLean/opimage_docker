@@ -2,7 +2,7 @@ FROM resin/rpi-raspbian:jessie
 
 MAINTAINER Martin Page
 
-RUN apt-get update --fix-missing
+RUN apt-get update #--fix-missing
 RUN apt-get install -y hostapd dbus net-tools iptables dnsmasq vim
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/*
