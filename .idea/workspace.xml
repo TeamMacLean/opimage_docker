@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b65bfd2-8059-4175-bd19-24f8de501339" name="Default" comment="" />
+    <list default="true" id="7b65bfd2-8059-4175-bd19-24f8de501339" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/dnsmasq.conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/entrypoint.sh" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" afterPath="$PROJECT_DIR$/Dockerfile" />
+      <change beforePath="$PROJECT_DIR$/projectFilesBackup/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/script.sh" afterPath="" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,18 +24,58 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="270">
+              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/script.sh">
+      <file leaf-file-name="dnsmasq.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dnsmasq.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="50" column="46" lean-forward="true" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+            <state relative-caret-position="90">
+              <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hostapd" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hostapd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hostapd.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hostapd.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entrypoint.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/entrypoint.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -45,12 +92,19 @@
       <find>ip_forward</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/script2.sh" />
         <option value="$PROJECT_DIR$/script.sh" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/hostapd" />
+        <option value="$PROJECT_DIR$/hostapd.conf" />
+        <option value="$PROJECT_DIR$/entrypoint.sh" />
+        <option value="$PROJECT_DIR$/dnsmasq.conf" />
       </list>
     </option>
   </component>
@@ -73,6 +127,7 @@
     <option name="width" value="960" />
     <option name="height" value="1173" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -99,8 +154,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -109,6 +164,9 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="add_unversioned_files" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -263,12 +321,17 @@
       <workItem from="1511365274590" duration="627000" />
       <workItem from="1511778565048" duration="589000" />
       <workItem from="1511803110940" duration="177000" />
-      <workItem from="1512989698218" duration="356000" />
+      <workItem from="1512989698218" duration="4182000" />
+      <workItem from="1513090260201" duration="796000" />
+      <workItem from="1513778001219" duration="852000" />
+      <workItem from="1513856945219" duration="2896000" />
+      <workItem from="1513940856723" duration="2000" />
+      <workItem from="1515418504654" duration="386000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18679000" />
+    <option name="totallyTimeSpent" value="27437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="959" y="23" width="960" height="1173" extended-state="0" />
@@ -278,11 +341,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890996" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49194312" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26729858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -305,6 +368,70 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -468,18 +595,58 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script2.sh" />
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/hostapd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        <state relative-caret-position="15">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="50" column="46" lean-forward="true" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+        <state relative-caret-position="60">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hostapd.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dnsmasq.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entrypoint.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
           <folding />
         </state>
       </provider>
