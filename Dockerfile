@@ -3,14 +3,10 @@ FROM sdhibit/rpi-raspbian:jessie
 #FROM ubuntu:latest
 MAINTAINER Martin Page
 
-RUN apt-get update --fix-missing && apt-get install -y \
-    hostapd \
-    dbus \
-    net-tools \
-    iptables \
-    dnsmasq \
-    vim \
- && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update --fix-missing
+RUN apt-get install -y hostapd dbus net-tools iptables dnsmasq vim
+RUN apt-get clean
+RUN rm -rf /var/lib/apt/lists/*
 
 ADD hostapd.conf /etc/hostapd/hostapd.conf
 ADD hostapd /etc/default/hostapd
