@@ -10,8 +10,6 @@ term_handler() {
   kill -TERM "$child" 2> /dev/null
 }
 
-rfkill unblock wifi
-
 ifconfig wlan0 10.0.0.1/24
 
 if [ -z "$SSID" -a -z "$PASSWORD" ]; then
@@ -35,10 +33,14 @@ then
     iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 fi
 
-# setup handlers
-trap term_handler SIGTERM
-trap term_handler SIGKILL
+cd install_opimage
+ls
+make opimage
 
-sleep infinity &
-child=$!
-wait "$child"
+# setup handlers
+#trap term_handler SIGTERM
+#trap term_handler SIGKILL
+
+#sleep infinity &
+#child=$!
+#wait "$child"
