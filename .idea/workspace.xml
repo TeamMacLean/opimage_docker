@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b65bfd2-8059-4175-bd19-24f8de501339" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Dockerfile" afterPath="$PROJECT_DIR$/Dockerfile" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/hostapd.conf" afterPath="$PROJECT_DIR$/hostapd.conf" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -66,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hostapd.conf" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hostapd.conf" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hostapd.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="30">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -110,11 +111,11 @@
         <option value="$PROJECT_DIR$/script2.sh" />
         <option value="$PROJECT_DIR$/script.sh" />
         <option value="$PROJECT_DIR$/hostapd" />
-        <option value="$PROJECT_DIR$/hostapd.conf" />
         <option value="$PROJECT_DIR$/dnsmasq.conf" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/entrypoint.sh" />
         <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/hostapd.conf" />
       </list>
     </option>
   </component>
@@ -167,9 +168,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,12 +350,13 @@
       <workItem from="1515419710765" duration="194000" />
       <workItem from="1515419951400" duration="360000" />
       <workItem from="1515420350277" duration="59000" />
-      <workItem from="1515420431981" duration="560000" />
+      <workItem from="1515420431981" duration="1071000" />
+      <workItem from="1515492095966" duration="81000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29211000" />
+    <option name="totallyTimeSpent" value="29803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="959" y="23" width="960" height="1173" extended-state="0" />
@@ -625,23 +627,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/script.sh" />
     <entry file="file://$PROJECT_DIR$/script2.sh" />
-    <entry file="file://$PROJECT_DIR$/hostapd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script.sh" />
-    <entry file="file://$PROJECT_DIR$/hostapd.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -681,6 +667,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hostapd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hostapd.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
           <folding />
         </state>
       </provider>
