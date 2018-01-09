@@ -10,6 +10,8 @@ term_handler() {
   kill -TERM "$child" 2> /dev/null
 }
 
+rfkill unblock wifi
+
 ifconfig wlan0 10.0.0.1/24
 
 if [ -z "$SSID" -a -z "$PASSWORD" ]; then
