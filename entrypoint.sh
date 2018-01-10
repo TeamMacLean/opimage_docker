@@ -33,9 +33,7 @@ then
     iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 fi
 
-cd install_opimage
-ls
-make opimage
+service apache2 start
 
 # setup handlers
 #trap term_handler SIGTERM
