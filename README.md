@@ -1,6 +1,6 @@
 # OPImage Docker
 
-`docker run --privileged --net=host teammaclean/opimage_docker`
+`docker run --privileged --net=host --device=/dev/vchiq teammaclean/opimage_docker`
 
 wifi password: raspberry  
 server address: 10.0.0.1  
