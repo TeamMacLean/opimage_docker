@@ -24,6 +24,10 @@ RUN rm -rf /var/www/html
 RUN git clone git://github.com/TeamMacLean/opimage_interface.git /var/www/html
 RUN chmod 775 /var/www/html/cgi-bin/*
 
+RUN cd /etc/apache2/mods-enabled
+RUN ln -s ../mods-available/cgi.load
+RUN service apache2 reload
+
 ADD hostapd.conf /etc/hostapd/hostapd.conf
 ADD hostapd /etc/default/hostapd
 ADD dnsmasq.conf /etc/dnsmasq.conf
