@@ -21,7 +21,7 @@ RUN git clone git://github.com/TeamMacLean/opimage.git
 RUN	cd opimage; sudo python setup.py develop
 
 RUN rm -rf /var/www
-RUN echo "test"; git clone git://github.com/wookoouk/opimage_interface.git /var/www
+RUN echo "testing"; git clone git://github.com/wookoouk/opimage_interface.git /var/www
 #RUN chmod 775 /var/www/cgi-bin; chmod 775 /var/www/cgi-bin/*
 RUN chown www-data:www-data /var/www -R
 ADD 000-default.conf /etc/apache2/sites-available/000-default.conf
