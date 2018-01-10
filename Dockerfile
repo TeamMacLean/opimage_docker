@@ -14,17 +14,12 @@ RUN rm -rf /var/lib/apt/lists/*
 ADD smb.txt /
 
 RUN (echo password; echo password) | smbpasswd -sa
-  # Make directory to share
 RUN  mkdir /data
-  # Adjust Samba configuration
 RUN  cat smb.txt >> /etc/samba/smb.conf
-  # Stop Samba
-RUN  service smbd stop
-  # Clean up
+#RUN  service smbd stop
 RUN  rm smb.txt
 
-EXPOSE 137 138 139 445 80
-RUN samba restart
+
 # tese are now installed by APT, but need to chek why it wanted a specific version of cython
 #RUN pip install wheel
 #RUN pip install cython==0.23
@@ -47,6 +42,7 @@ ADD hostapd.conf /etc/hostapd/hostapd.conf
 ADD hostapd /etc/default/hostapd
 ADD dnsmasq.conf /etc/dnsmasq.conf
 
-ADD entrypoint.sh /entrypoint.sh
+EXPOSE 137 138 139 445 80
 
+ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]

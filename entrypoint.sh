@@ -34,7 +34,7 @@ then
 fi
 
 service apache2 start
-/usr/sbin/smbd -FS
+/etc/init.d/samba restart
 # setup handlers
 trap term_handler SIGTERM
 trap term_handler SIGKILL
