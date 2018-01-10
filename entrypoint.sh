@@ -35,10 +35,10 @@ fi
 
 service apache2 start
 
-# setup handlers
-#trap term_handler SIGTERM
-#trap term_handler SIGKILL
-
-#sleep infinity &
-#child=$!
-#wait "$child"
+ setup handlers
+trap term_handler SIGTERM
+trap term_handler SIGKILL
+#
+sleep infinity &
+child=$!
+wait "$child"
