@@ -1,6 +1,6 @@
 
 [data]
-path = /data
+path = /var/www
 available = yes
 valid users = root
 read only = no
