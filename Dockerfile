@@ -23,6 +23,7 @@ RUN	cd opimage; sudo python setup.py develop
 RUN rm -rf /var/www/html
 RUN git clone git://github.com/TeamMacLean/opimage_interface.git /var/www/html
 RUN chmod 775 /var/www/html/cgi-bin/*
+RUN chown www-data:www-data /var/www/html -R
 
 
 
