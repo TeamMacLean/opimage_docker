@@ -20,16 +20,22 @@ RUN cd opimage_things; sudo python setup.py develop
 RUN git clone git://github.com/TeamMacLean/opimage.git
 RUN	cd opimage; sudo python setup.py develop
 
-RUN rm -rf /var/www/html
-RUN git clone git://github.com/TeamMacLean/opimage_interface.git /var/www/html
-RUN chmod 775 /var/www/html/cgi-bin; chmod 775 /var/www/html/cgi-bin/*
-RUN chown www-data:www-data /var/www/html -R
+RUN rm -rf /var/www
+RUN git clone git://github.com/TeamMacLean/opimage_interface.git /var/www
+RUN chmod 775 /var/www/cgi-bin; chmod 775 /var/www/cgi-bin/*
+RUN chown www-data:www-data /var/www -R
 
 
 
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+#RUN cat /etc/apache2/sites-available/000-default.conf
 RUN a2enmod cgi
-RUN service apache2 restart
+ADD 000-default.conf /etc/apache2/sites-available/000-default.conf
+
+#RUN service apache2 restart
+
+#RUN cat /etc/apache2/000-default.conf
+#RUN cat /etc/apache2/sites-available/000-default.conf
 
 ADD hostapd.conf /etc/hostapd/hostapd.conf
 ADD hostapd /etc/default/hostapd
