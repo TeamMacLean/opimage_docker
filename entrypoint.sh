@@ -33,6 +33,8 @@ then
     iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 fi
 
+usermod -a -G video $(whoami)
+chmod u+s /dev/vchiq
 chmod 777 /dev/vchiq
 tail /dev/vchiq
 
