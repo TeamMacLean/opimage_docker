@@ -30,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/entrypoint.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="373">
-              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -323,12 +323,12 @@
       <workItem from="1515419951400" duration="360000" />
       <workItem from="1515420350277" duration="59000" />
       <workItem from="1515420431981" duration="1071000" />
-      <workItem from="1515492095966" duration="17441000" />
+      <workItem from="1515492095966" duration="17498000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47163000" />
+    <option name="totallyTimeSpent" value="47220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="959" y="23" width="960" height="1173" extended-state="0" />
@@ -654,7 +654,7 @@
     <entry file="file://$PROJECT_DIR$/entrypoint.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
           <folding />
         </state>
       </provider>
