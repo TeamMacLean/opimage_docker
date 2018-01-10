@@ -7,6 +7,7 @@ RUN apt-get install -y build-essential zlib1g zlib1g-dev
 RUN apt-get install -y hostapd dbus net-tools iptables dnsmasq
 RUN apt-get install -y git python-dev python-pip python-setuptools python-wheel python-scipy python-matplotlib python-skimage cython python-tk
 RUN apt-get install -y apache2
+RUN apt-get install -y python-picamera
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/*
 
