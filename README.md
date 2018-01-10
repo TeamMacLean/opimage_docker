@@ -7,4 +7,6 @@ server address: 10.0.0.1
 samba username: root  
 samba password: password  
 
+`sudo chmod 777 /dev/vchiq`
+
 softblock fix: `rfkill unblock wifi`
