@@ -33,6 +33,8 @@ then
     iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 fi
 
+chmod 777 /dev/vchiq
+
 service apache2 start
 /etc/init.d/samba restart
 # setup handlers

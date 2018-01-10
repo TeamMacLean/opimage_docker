@@ -42,8 +42,6 @@ ADD hostapd.conf /etc/hostapd/hostapd.conf
 ADD hostapd /etc/default/hostapd
 ADD dnsmasq.conf /etc/dnsmasq.conf
 
-RUN chmod 777 /dev/vchiq
-
 EXPOSE 137 138 139 445 80
 
 ADD entrypoint.sh /entrypoint.sh
