@@ -24,13 +24,10 @@ RUN rm -rf /var/www
 RUN git clone git://github.com/TeamMacLean/opimage_interface.git /var/www
 RUN chmod 775 /var/www/cgi-bin; chmod 775 /var/www/cgi-bin/*
 RUN chown www-data:www-data /var/www -R
-
-
-
-RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
-#RUN cat /etc/apache2/sites-available/000-default.conf
-RUN a2enmod cgi
 ADD 000-default.conf /etc/apache2/sites-available/000-default.conf
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+RUN a2enmod cgi
+
 
 #RUN service apache2 restart
 
