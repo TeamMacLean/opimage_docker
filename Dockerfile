@@ -28,12 +28,6 @@ ADD 000-default.conf /etc/apache2/sites-available/000-default.conf
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 RUN a2enmod cgi
 
-
-#RUN service apache2 restart
-
-#RUN cat /etc/apache2/000-default.conf
-#RUN cat /etc/apache2/sites-available/000-default.conf
-
 ADD hostapd.conf /etc/hostapd/hostapd.conf
 ADD hostapd /etc/default/hostapd
 ADD dnsmasq.conf /etc/dnsmasq.conf

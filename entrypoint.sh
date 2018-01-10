@@ -39,6 +39,8 @@ service apache2 start
 trap term_handler SIGTERM
 trap term_handler SIGKILL
 
-sleep infinity &
-child=$!
-wait "$child"
+tail -f /var/log/apache2
+
+#sleep infinity &
+#child=$!
+#wait "$child"
