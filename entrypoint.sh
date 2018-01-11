@@ -25,6 +25,8 @@ sed -i "s/wpa_passphrase=.*/wpa_passphrase=$password/g" /etc/hostapd/hostapd.con
 /etc/init.d/dbus start
 /etc/init.d/hostapd start
 /etc/init.d/dnsmasq start
+/etc/init.d/apache2 start
+/etc/init.d/samba start
 
 echo 1 > /proc/sys/net/ipv4/ip_forward
 iptables -t nat -C POSTROUTING -o eth0 -j MASQUERADE
@@ -38,8 +40,7 @@ chmod u+s /dev/vchiq
 chmod 777 /dev/vchiq
 tail /dev/vchiq
 
-service apache2 start
-/etc/init.d/samba restart
+
 # setup handlers
 trap term_handler SIGTERM
 trap term_handler SIGKILL

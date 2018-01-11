@@ -16,14 +16,7 @@ ADD smb.txt /
 RUN (echo password; echo password) | smbpasswd -sa
 RUN  mkdir /data
 RUN  cat smb.txt >> /etc/samba/smb.conf
-#RUN  service smbd stop
 RUN  rm smb.txt
-
-
-# tese are now installed by APT, but need to chek why it wanted a specific version of cython
-#RUN pip install wheel
-#RUN pip install cython==0.23
-#RUN pip install scikit-image
 
 RUN git clone git://github.com/TeamMacLean/opimage_things
 RUN cd opimage_things; sudo python setup.py develop
@@ -42,7 +35,13 @@ ADD hostapd.conf /etc/hostapd/hostapd.conf
 ADD hostapd /etc/default/hostapd
 ADD dnsmasq.conf /etc/dnsmasq.conf
 
-EXPOSE 137 138 139 445 80
+RUN /etc/init.d/dbus stop
+RUN /etc/init.d/hostapd stop
+RUN /etc/init.d/dnsmasq stop
+RUN /etc/init.d/apache2 stop
+RUN /etc/init.d/samba stop
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
+
+EXPOSE 137 138 139 445 80
