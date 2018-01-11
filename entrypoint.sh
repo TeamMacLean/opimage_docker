@@ -10,6 +10,9 @@ term_handler() {
   kill -TERM "$child" 2> /dev/null
 }
 
+python /cam.py
+ls
+
 ifconfig wlan0 10.0.0.1/24
 
 if [ -z "$SSID" -a -z "$PASSWORD" ]; then
@@ -35,10 +38,14 @@ then
     iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 fi
 
+#usermod -a -G video $(whoami)
+#chmod u+s /dev/vchiq
+#chmod 777 /dev/vchiq
+#tail /dev/vchiq
+chmod a+rw /dev/vchiq
 usermod -a -G video $(whoami)
-chmod u+s /dev/vchiq
-chmod 777 /dev/vchiq
-tail /dev/vchiq
+usermod -a -G video root
+usermod -a -G video www-data
 
 
 # setup handlers
