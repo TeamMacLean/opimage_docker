@@ -10,8 +10,8 @@ term_handler() {
   kill -TERM "$child" 2> /dev/null
 }
 
-python /cam.py
-ls
+#python /cam.py
+#ls
 
 ifconfig wlan0 10.0.0.1/24
 
