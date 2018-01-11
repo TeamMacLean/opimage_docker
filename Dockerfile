@@ -12,7 +12,6 @@ RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/*
 
 ADD smb.txt /
-
 RUN (echo password; echo password) | smbpasswd -sa
 RUN  mkdir /data
 RUN  cat smb.txt >> /etc/samba/smb.conf
@@ -34,6 +33,8 @@ RUN a2enmod cgi
 ADD hostapd.conf /etc/hostapd/hostapd.conf
 ADD hostapd /etc/default/hostapd
 ADD dnsmasq.conf /etc/dnsmasq.conf
+
+RUN adduser www-data dialout
 
 RUN /etc/init.d/dbus stop
 RUN /etc/init.d/hostapd stop
