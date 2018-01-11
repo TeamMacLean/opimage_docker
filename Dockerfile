@@ -26,6 +26,7 @@ RUN	cd opimage; sudo python setup.py develop
 RUN rm -rf /var/www
 RUN echo "test"; git clone git://github.com/wookoouk/opimage_interface.git /var/www
 RUN chown www-data:www-data /var/www -R
+RUN chmod 777 /var/www/cgi-bin/* -R
 ADD 000-default.conf /etc/apache2/sites-available/000-default.conf
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 RUN a2enmod cgi
