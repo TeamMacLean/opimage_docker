@@ -25,11 +25,11 @@ fi
 sed -i "s/ssid=.*/ssid=$ssid/g" /etc/hostapd/hostapd.conf
 sed -i "s/wpa_passphrase=.*/wpa_passphrase=$password/g" /etc/hostapd/hostapd.conf
 
-/etc/init.d/dbus start
-/etc/init.d/hostapd start
-/etc/init.d/dnsmasq start
-/etc/init.d/apache2 start
-/etc/init.d/samba start
+/etc/init.d/dbus restart
+/etc/init.d/hostapd restart
+/etc/init.d/dnsmasq restart
+/etc/init.d/apache2 restart
+/etc/init.d/samba restart
 
 echo 1 > /proc/sys/net/ipv4/ip_forward
 iptables -t nat -C POSTROUTING -o eth0 -j MASQUERADE

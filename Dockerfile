@@ -24,7 +24,7 @@ RUN git clone git://github.com/TeamMacLean/opimage.git
 RUN	cd opimage; sudo python setup.py develop
 
 RUN rm -rf /var/www
-RUN echo "test3"; git clone git://github.com/wookoouk/opimage_interface.git /var/www
+RUN echo "test4"; git clone git://github.com/wookoouk/opimage_interface.git /var/www
 RUN chown www-data:www-data /var/www -R
 RUN chmod 777 /var/www/cgi-bin/* -R
 ADD 000-default.conf /etc/apache2/sites-available/000-default.conf
@@ -37,11 +37,11 @@ ADD dnsmasq.conf /etc/dnsmasq.conf
 
 RUN adduser www-data dialout
 
-RUN /etc/init.d/dbus stop
-RUN /etc/init.d/hostapd stop
-RUN /etc/init.d/dnsmasq stop
-RUN /etc/init.d/apache2 stop
-RUN /etc/init.d/samba stop
+#RUN /etc/init.d/dbus stop
+#RUN /etc/init.d/hostapd stop
+#RUN /etc/init.d/dnsmasq stop
+#RUN /etc/init.d/apache2 stop
+#RUN /etc/init.d/samba stop
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
