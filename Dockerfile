@@ -46,6 +46,5 @@ RUN adduser www-data dialout
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
-ADD cam.py /
 
 EXPOSE 137 138 139 445 80
