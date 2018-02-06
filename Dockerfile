@@ -1,6 +1,5 @@
 FROM ubuntu:16.04
 
-
 MAINTAINER Martin Page
 
 RUN apt-get update --fix-missing
