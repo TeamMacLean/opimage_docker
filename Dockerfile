@@ -1,8 +1,8 @@
-FROM resin/rpi-raspbian:stretch
+FROM debian:stretch
 
 MAINTAINER Martin Page
 
-RUN apt-get update
+RUN apt-get update --fix-missing
 RUN apt-get install -y build-essential zlib1g zlib1g-dev
 RUN apt-get install -y hostapd dbus net-tools iptables dnsmasq
 RUN apt-get install -y git python-dev python-pip python-setuptools python-wheel python-scipy python-matplotlib python-skimage cython python-tk python-picamera
